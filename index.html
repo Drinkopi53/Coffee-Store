@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kopi Nusantara — Coffee Store</title>
+  <meta name="description" content="Kopi Nusantara: specialty coffee store dengan biji kopi pilihan dari seluruh Indonesia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="brand">
+        <span class="brand-icon">☕</span>
+        <span class="brand-text">Kopi<span>Nusantara</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Beranda</a>
+        <a href="#about" class="nav-link">Tentang</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#products" class="nav-link">Produk</a>
+        <a href="#testimonials" class="nav-link">Testimoni</a>
+        <a href="#contact" class="nav-link">Kontak</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Buka keranjang">
+          🛒 <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Buka menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <span class="badge">🌱 100% Arabika & Robusta Nusantara</span>
+        <h1>Nikmati Secangkir <span class="highlight">Kopi Berkualitas</span> dari Tanah Air</h1>
+        <p>Biji kopi pilihan langsung dari petani Gayo, Toraja, Kintamani, dan Flores. Di-roast segar setiap minggu untuk cita rasa terbaik di setiap tegukan.</p>
+        <div class="hero-cta">
+          <a href="#menu" class="btn btn-primary">Pesan Sekarang</a>
+          <a href="#about" class="btn btn-outline">Pelajari Lebih</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>15+</strong><span>Tahun Pengalaman</span></div>
+          <div class="stat"><strong>25</strong><span>Varian Kopi</span></div>
+          <div class="stat"><strong>10rb+</strong><span>Pelanggan Setia</span></div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-circle"></div>
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Secangkir kopi susu" />
+        <div class="floating-card card-1">
+          <span>⭐ 4.9/5</span>
+          <small>Rating Pelanggan</small>
+        </div>
+        <div class="floating-card card-2">
+          <span>🚚 Gratis Ongkir</span>
+          <small>Min. belanja Rp100rb</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Gayo Aceh ✦</span><span>Toraja ✦</span><span>Kintamani Bali ✦</span><span>Flores Bajawa ✦</span><span>Java Preanger ✦</span><span>Mandailing ✦</span><span>Wamena Papua ✦</span>
+      <span>Gayo Aceh ✦</span><span>Toraja ✦</span><span>Kintamani Bali ✦</span><span>Flores Bajawa ✦</span><span>Java Preanger ✦</span><span>Mandailing ✦</span><span>Wamena Papua ✦</span>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container about-inner">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1447933601401-7662c59fa2ce?auto=format&fit=crop&w=800&q=80" alt="Barista meracik kopi" />
+      </div>
+      <div class="about-content">
+        <span class="section-tag">Tentang Kami</span>
+        <h2>Dari Kebun Kopi Langsung ke Cangkir Anda</h2>
+        <p>Kopi Nusantara lahir dari kecintaan terhadap kopi Indonesia. Kami bekerja sama langsung dengan lebih dari 200 petani kopi di berbagai daerah, memastikan setiap biji dipetik, diproses, dan di-roast dengan standar specialty coffee.</p>
+        <ul class="feature-list">
+          <li><span>✔</span> Single origin dari petani lokal terpercaya</li>
+          <li><span>✔</span> Roasting segar setiap minggu</li>
+          <li><span>✔</span> Fair trade & ramah lingkungan</li>
+          <li><span>✔</span> Garansi uang kembali jika tidak cocok</li>
+        </ul>
+        <a href="#products" class="btn btn-primary">Lihat Produk Kami</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section class="menu section alt-bg" id="menu">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Menu Favorit</span>
+        <h2>Racikan Signature Kami</h2>
+        <p>Dibuat oleh barista bersertifikat dengan resep eksklusif.</p>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <div class="menu-img"><img src="https://images.unsplash.com/photo-1572442388796-11668a67e538?auto=format&fit=crop&w=600&q=80" alt="Es Kopi Susu" loading="lazy" /></div>
+          <div class="menu-body">
+            <h3>Es Kopi Susu Nusantara</h3>
+            <p>Double shot espresso, gula aren cair, susu segar.</p>
+            <div class="menu-foot"><span class="price">Rp18.000</span><button class="btn-add" data-name="Es Kopi Susu" data-price="18000">+ Keranjang</button></div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-img"><img src="https://images.unsplash.com/photo-1534778191232-9b945100f29f?auto=format&fit=crop&w=600&q=80" alt="Cappuccino" loading="lazy" /></div>
+          <div class="menu-body">
+            <h3>Cappuccino Klasik</h3>
+            <p>Espresso dengan foam susu lembut dan taburan cokelat.</p>
+            <div class="menu-foot"><span class="price">Rp25.000</span><button class="btn-add" data-name="Cappuccino" data-price="25000">+ Keranjang</button></div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-img"><img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba6?auto=format&fit=crop&w=600&q=80" alt="V60 Manual Brew" loading="lazy" /></div>
+          <div class="menu-body">
+            <h3>V60 Single Origin</h3>
+            <p>Manual brew pilihan: Gayo, Toraja, atau Kintamani.</p>
+            <div class="menu-foot"><span class="price">Rp28.000</span><button class="btn-add" data-name="V60 Single Origin" data-price="28000">+ Keranjang</button></div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-img"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=80" alt="Caffè Latte" loading="lazy" /></div>
+          <div class="menu-body">
+            <h3>Caffè Latte</h3>
+            <p>Espresso halus dengan susu steamed dan latte art.</p>
+            <div class="menu-foot"><span class="price">Rp26.000</span><button class="btn-add" data-name="Caffè Latte" data-price="26000">+ Keranjang</button></div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-img"><img src="https://images.unsplash.com/photo-1578314675229-c0abb544af1c?auto=format&fit=crop&w=600&q=80" alt="Matcha Latte" loading="lazy" /></div>
+          <div class="menu-body">
+            <h3>Matcha Latte</h3>
+            <p>Matcha premium Uji dengan susu creamy (non-kopi).</p>
+            <div class="menu-foot"><span class="price">Rp27.000</span><button class="btn-add" data-name="Matcha Latte" data-price="27000">+ Keranjang</button></div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-img"><img src="https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?auto=format&fit=crop&w=600&q=80" alt="Affogato" loading="lazy" /></div>
+          <div class="menu-body">
+            <h3>Affogato Gelato</h3>
+            <p>Satu scoop gelato vanila disiram shot espresso.</p>
+            <div class="menu-foot"><span class="price">Rp30.000</span><button class="btn-add" data-name="Affogato" data-price="30000">+ Keranjang</button></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS (Beans) ===== -->
+  <section class="products section" id="products">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Toko Biji Kopi</span>
+        <h2>Beli Biji Kopi Untuk di Rumah</h2>
+        <p>Kemasan 200gr, di-gratis sesuai pesanan (biji / bubuk).</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-badge">Best Seller</div>
+          <img src="https://images.unsplash.com/photo-1611854779393-0f042e22bf7f?auto=format&fit=crop&w=600&q=80" alt="Kopi Gayo" loading="lazy" />
+          <div class="product-body">
+            <h3>Kopi Gayo Aceh</h3>
+            <p class="notes">Caramel · Floral · Full body</p>
+            <div class="product-foot">
+              <span class="price">Rp85.000</span>
+              <button class="btn btn-primary btn-sm" data-name="Gayo Aceh 200gr" data-price="85000">+ Keranjang</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1559056199-641dc0bf7b2f?auto=format&fit=crop&w=600&q=80" alt="Kopi Toraja" loading="lazy" />
+          <div class="product-body">
+            <h3>Kopi Toraja</h3>
+            <p class="notes">Dark chocolate · Spicy</p>
+            <div class="product-foot">
+              <span class="price">Rp90.000</span>
+              <button class="btn btn-primary btn-sm" data-name="Toraja 200gr" data-price="90000">+ Keranjang</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-badge new">New</div>
+          <img src="https://images.unsplash.com/photo-1610889556587-3d21bf9df9a9?auto=format&fit=crop&w=600&q=80" alt="Kopi Kintamani" loading="lazy" />
+          <div class="product-body">
+            <h3>Kintamani Bali</h3>
+            <p class="notes">Citrus · Bright acidity</p>
+            <div class="product-foot">
+              <span class="price">Rp88.000</span>
+              <button class="btn btn-primary btn-sm" data-name="Kintamani 200gr" data-price="88000">+ Keranjang</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1524350876685-274059332603?auto=format&fit=crop&w=600&q=80" alt="Kopi Flores" loading="lazy" />
+          <div class="product-body">
+            <h3>Flores Bajawa</h3>
+            <p class="notes">Nutty · Hazelnut · Sweet</p>
+            <div class="product-foot">
+              <span class="price">Rp82.000</span>
+              <button class="btn btn-primary btn-sm" data-name="Flores Bajawa 200gr" data-price="82000">+ Keranjang</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials section alt-bg" id="testimonials">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Testimoni</span>
+        <h2>Kata Mereka Tentang Kopi Kami</h2>
+      </div>
+      <div class="testimonial-grid">
+        <blockquote class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Es kopi susunya juara! Gula arennya pas, nggak bikin eneg. Setiap pagi wajib mampir."</p>
+          <footer><span class="avatar">R</span><div><strong>Rina Kartika</strong><small>Freelancer</small></div></footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Beli biji Gayo 200gr, aroma waktu di-grind luar biasa. Fresh roast terbukti, tanggal roast selalu terbaru."</p>
+          <footer><span class="avatar">B</span><div><strong>Budi Santoso</strong><small>Home Barista</small></div></footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <div class="stars">★★★★☆</div>
+          <p>"Tempatnya cozy buat kerja, WiFi kencang, colokan banyak. V60 Kintamani-nya must try!"</p>
+          <footer><span class="avatar">S</span><div><strong>Sarah Wijaya</strong><small>Content Creator</small></div></footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta">
+    <div class="container cta-inner">
+      <h2>Dapatkan Diskon 15% Order Pertama</h2>
+      <p>Bergabung dengan newsletter kami dan terima promo serta edukasi kopi setiap bulan.</p>
+      <form class="cta-form" id="newsletterForm">
+        <input type="email" placeholder="Masukkan email Anda" required />
+        <button type="submit" class="btn btn-light">Berlangganan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-info">
+        <span class="section-tag">Kontak</span>
+        <h2>Mampiri Kedai Kami</h2>
+        <ul>
+          <li>📍 Jl. Raya Kopi No. 45, Jakarta Selatan</li>
+          <li>📞 +62 812-3456-7890</li>
+          <li>✉️ halo@kopinusantara.id</li>
+          <li>🕐 Senin–Minggu, 07.00 – 22.00 WIB</li>
+        </ul>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="TikTok">TT</a>
+          <a href="#" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <h3>Kirim Pesan</h3>
+        <input type="text" placeholder="Nama lengkap" required />
+        <input type="email" placeholder="Email" required />
+        <textarea rows="4" placeholder="Pesan Anda" required></textarea>
+        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="brand"><span class="brand-icon">☕</span><span class="brand-text">Kopi<span>Nusantara</span></span></a>
+        <p>Specialty coffee dari hati Nusantara, untuk cangkir Anda.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigasi</h4>
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang</a>
+        <a href="#menu">Menu</a>
+        <a href="#products">Produk</a>
+      </div>
+      <div class="footer-col">
+        <h4>Bantuan</h4>
+        <a href="#">Cara Pemesanan</a>
+        <a href="#">Pengiriman</a>
+        <a href="#">Pengembalian</a>
+        <a href="#contact">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Jam Buka</h4>
+        <p>Sen–Jum: 07.00–22.00<br/>Sab–Min: 08.00–23.00</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Kopi Nusantara. Semua hak dilindungi.</div>
+  </footer>
+
+  <!-- ===== CART DRAWER ===== -->
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Keranjang Anda</h3>
+      <button class="cart-close" id="cartClose" aria-label="Tutup keranjang">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="cart-empty">Keranjang masih kosong ☕</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: <strong id="cartTotal">Rp0</strong></div>
+      <button class="btn btn-primary checkout-btn" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
